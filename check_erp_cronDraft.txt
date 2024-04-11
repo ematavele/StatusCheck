@@ -9,3 +9,9 @@
 //5 - Verificar se o cronjob foi criado usando "crontab -l"
 
 
+
+
+
+email deve ser enviado na primeira busca 
+
+caso de um endereco esteja com codigo diferente, mande outro email.

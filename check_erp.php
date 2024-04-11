@@ -16,7 +16,7 @@ $urls = array(
     'https://erp.kidzkare.co.mz/'
 );
 
-$to = 'tecnico@entretech.co.mz';
+$to = 'receiver';
 $subject = 'Relatorio de Teste de Estado de Sistemas';
 
 $message = "Relatorio de Teste de Estado de Sistemas\n\n";
@@ -42,15 +42,15 @@ $mail = new PHPMailer(true);
 
 // Configurações básicas do PHPMailer
 $mail->isSMTP();
-$mail->Host = 'mail.entretechlda.com';
+$mail->Host = 'mail.domain';
 $mail->SMTPAuth = true;
-$mail->Username = 'ematavele@entretechlda.com';
-$mail->Password = 'matavele!2024';
+$mail->Username = 'email';
+$mail->Password = 'senha';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 // Configurações específicas do email
-$mail->setFrom('ematavele@entretechlda.com', 'ERP Status Checker');
+$mail->setFrom('email', 'ERP Status Checker');
 $mail->addAddress($to);
 $mail->Subject = $subject;
 $mail->Body = $message;
